@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <div class="container-icon">
+        <img
+          class="img-icon"
+          src="./asset/siger.png"
+          height="40px"
+          width="40px"
+          alt="siger"
+        />
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#my-profil">My Profil</a>
+        <a href="#massage-us">Massage Us</a>
+      </nav>
+    </header>
+    <!-- end-navbar -->
+    <div class="welcome">
+      <h2>Hai <span id="name"></span>, Welcome To My Portofolio</h2>
+      <h3>I'M, Web Developer</h3>
+    </div>
+    <div class="slideshow-container" id="home">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="img-slide" src="./asset/foto1.jpg" style="width: 100%" />
+        <div class="text">My Name Is Irfan</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="img-slide" src="./asset/foto2.jpg" style="width: 100%" />
+        <div class="text">I'm A Student</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="img-slide" src="./asset/foto3.jpg" style="width: 100%" />
+        <div class="text">Universitas Muhammadiyah Metro</div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <hr />
+    <hr />
+
+    <!-- section about me -->
+    <section class="container-card" id="my-profil">
+      <h2 class="text-about-me">About Me</h2>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="img-card"
+              src="./asset/card1.jpg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Irfan</h1>
+            <p>Mahasiswa</p>
+            <p>Ilmu Komputer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="img-card"
+              src="./asset/foto1.jpg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Irfan</h1>
+            <p>Junior FrontEnd WEb Developer</p>
+            <p>Html, Css, Dan Javascript</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="img-card"
+              src="./asset/card2.jpg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Irfan</h1>
+            <p>Junior BackEnd Web Developer</p>
+            <p>PHP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <hr />
+    <!-- massage us -->
+    <h3 class="message">Message Us</h3>
+
+    <section class="container-form" id="massage-us">
+      <div class="item1">
+        <form name="myForm" method="dialog">
+          <label for="fname">Your Name</label>
+          <input
+            required
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Tanggal Lahir</label>
+          <input
+            required
+            type="date"
+            id="lname"
+            name="tanggal"
+            placeholder="Your last name.."
+          />
+
+          <label>Jenis Kelamin</label>
+          <input type="radio" id="age2" name="age" value="Laki-Laki" />
+          <label for="age2">Laki-Laki</label>
+          <input type="radio" id="age3" name="age" value="Perempuan" />
+          <label for="age3">Perempuan</label>
+
+          <label for="subject">Pesan</label>
+          <textarea
+            required
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input onclick="TampilkanHasil()" type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="item2">
+        <div>
+          <p>Nama : <span id="n"></span></p>
+          <p>Tanggal Lahir : <span id="date"></span></p>
+          <p>Kelamin : <span id="Kelamin"></span></p>
+          <p>pesan : <span id="pesan"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- value massage us -->
+
+    <!-- script javascript -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
